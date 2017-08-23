@@ -26,6 +26,7 @@ var appData = require('../data.json');
 var seller = appData.seller;
 var goods = appData.goods;
 var ratings = appData.ratings;
+var banner = appData.banner;
 
 var apiRoutes = express.Router();
 
@@ -47,6 +48,13 @@ apiRoutes.get('/ratings', function (req, res) {
   res.json({
     errno: 0,
     data: ratings
+  })
+});
+
+apiRoutes.get('/banner', function (req, res) {
+  res.json({
+    errno: 0,
+    data: banner
   })
 });
 
