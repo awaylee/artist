@@ -3,8 +3,9 @@
     <div class="header">
       <span class="area">北京</span>
       <span class="title">观照自然</span>
-      <span class="search">search</span>
+      <span class="iconfont icon-sousuo search"></span>
     </div>
+    <!--banner 开始↓↓↓-->
     <div class="block">
       <el-carousel trigger="click" height="200px">
         <el-carousel-item v-for="item in banner.img">
@@ -13,6 +14,12 @@
         </el-carousel-item>
       </el-carousel>
     </div>
+    <!--banner结束 ↑↑↑-->
+    <!--即将开展 开始↓↓↓-->
+    <div class="content" ref="content">
+
+    </div>
+    <!--即将开展 结束↑↑↑-->
   </div>
 </template>
 

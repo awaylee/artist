@@ -16,14 +16,14 @@
     </div>
     <img src="./assets/logo.png">
     <router-view></router-view>
-    <div class="footer">
+    <v-footer></v-footer>
 
-    </div>
   </div>
 </template>
 
 <script>
 import home from './components/home/home.vue';
+import footer from './components/footer/footer.vue';
 
 export default {
   data() {
@@ -34,20 +34,16 @@ export default {
   },
   name: 'app',
   components:{
-    'v-home':home
+    'v-home':home,
+    'v-footer':footer
   }
 }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+body
+  background #f4f4f4
 
 
-.footer
-  width 100%
-  height 60px
-  position fixed
-  left 0
-  bottom 0
-  background #2c3e50;
 
 </style>
